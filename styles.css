@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: hsl(0, 0%, 0%);
+  padding: 29px;
+  margin: auto;
+  max-width: 1000px;
+  font-family: oldsans;
+  color: azure;
+  border: #b17d97 double 5px;
+  
+  
+}
+
+@font-face {
+src: url(../web/thefonts/windows.otf);
+font-family: oldsans;
+} 
+
+.page-wrap {
+
+  height: calc(100vh - 10px);
+  display: grid;
+  gap: 10px;
+  background-color: black;
+  padding: 10px;
+  /* border: 1px dashed rgb(224, 16, 103); */
+
+  @media (max-width: 600px) {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    > * {
+      grid-column: 1 / -1 !important;
+      grid-row: auto !important;
+    }
+  }
+}
+
+.page-header {
+  grid-column: 1 / 5;
+  height: 100px;
+  position: relative;
+  font-family: oldsans;
+  color: azure;
+  /* background-color: rgb(18, 70, 150); */
+  /* border: 2px dashed rgb(224, 16, 103); */
+}
+
+.page-sidebar {
+  grid-column:  4 / 5;
+  grid-row: 2 / 4;
+  color: azure;
+  /* width: 15vh; */
+  position: relative;
+  border: 2px dashed rgb(224, 16, 103);
+  /* background-color: black; */
+}
+
+.page-nav {
+  grid-column: 1 / 2; 
+  grid-row: 2 /4;
+  border: 2px dashed rgb(224, 16, 103);
+  width: 150px;
+  /* background-color: black; */
+}
+
+.page-main {
+  grid-column: 2 / 3;
+  /* background: #a146b3; */
+  /* max-width: 100vh;
+  max-height: 85vh; */
+  /* position: relative; */
+  /* padding: 15px; */
+}
+
+.page-footer {
+  grid-column: 1 / 5;
+  height: 50px;
+  color: azure;
+  border: 1px dashed rgb(224, 16, 103);
+  background-color: black;
+}
+
+details p {
+  text-transform: none;
+  text-align: left;
+}
+
+
+
+.buttonz {
+	background-color:#d4bac8;
+	/* display: block; */
+	cursor: pointer;
+	color:#000000;
+	font-family: oldsans;
+  /* font-weight: lighter; */
+	font-size: 18px;
+	padding: 6px 19px;
+  list-style-type: none;
+  margin: 5px;
+}
+
+.buttonz:hover {
+	background-color:#b17d97;
+}
+
+.buttonz:active {
+	position:relative;
+	top:1px;
+}
+
+#welcome {
+  /* max-width: 290px;
+  max-height: 290px; */
+  position: absolute;
+  left: 290px;
+  bottom: -18px;
+}
+
+#dance {
+  position: relative;
+}
+
+.mainpictures {
+ 
+}
+
+#leftborder {
+  position: absolute;
+  right: 1150px;
+  bottom: -40px;
+}
+
+#rightborder {
+  position: absolute;
+  left: 1160px;
+  bottom: -40px;
+}
+
+/* #slab {
+position: absolute;
+right: -140px;
+top: 20px;
+} */
+
+#girl {
+max-width: 130px;
+max-height: 130px;
+}
+
+#girl:hover {
+content: url(webimg/blueeye.png);
+max-width: 130px;
+max-height: 130px;
+}
+
+#girls {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+#girls:hover {
+  content: url(webimg/blondie.png);
+  max-width: 120px;
+  max-height: 120px;
+}
+
+
+
+
+/* WIPs page */
+
+#paper {
+  position: absolute;
+  left: 410px;
+  bottom: 100px;
+  transform: rotate(5deg);
+  /* z-index: 1; */
+}
+
+.sketch {
+  position: relative;
+  z-index: 1;
+  /* left: 50px; */
+  clip-path: polygon(63% 0, 78% 22%, 100% 43%, 85% 74%, 64% 94%, 34% 83%, 6% 84%, 14% 43%, 8% 13%);
+}
+
+#point {
+  position: relative;
+  right: -15px;
+  transform: rotate(4deg);
+}
+
+#bat {
+  position: relative;
+  left: 30px;
+}
+
+#hat {
+  position: relative;
+  left: 50px;
+  transform: rotate(-5deg);
+}
+
+#stare {
+  position: relative;
+  left: 60px;
+}
+
+#up {
+  position: relative;
+  left: 120px;
+}
+
+#tape {
+  position: relative;
+  z-index: 1;
+  left: -300px;
+  top: 60px;
+  transform: rotate(190deg);
+}
+
+#tape2 {
+  position: relative;
+  z-index: 1;
+  left: -10px;
+  bottom: 450px;
+  transform: rotate(-40deg);
+}
+
+#tape3 {
+  position: relative;
+  z-index: 0;
+  left: 490px;
+  bottom: 150px;
+  transform: rotate(100deg);
+}
+
+
+
+/* About page */
+
+#faq {
+  position: absolute;
+  bottom: 50px;
+  left: 90px;
+}
+
+/* #pallet {
+  position: absolute;
+  left: 780px;
+  bottom: 512px;
+} */
+
+
+
+/* Contact page */
+
+#talk {
+  position: absolute;
+  bottom: 50px;
+  left: 110px;
+}
+
+#contactme {
+  position: relative;
+  right: 40px;
+}
+
+#gmail {
+position: relative;
+top: 30px;
+right: 40px;
+}
+
+
+#mylogo {
+  position: relative;
+  bottom: 30px;
+  left: 200px;
+}
