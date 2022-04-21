@@ -151,7 +151,7 @@ max-height: 130px;
 }
 
 #girl:hover {
-content: url(webimg/blueeye.png);
+content: url(blueeye.png);
 max-width: 130px;
 max-height: 130px;
 }
@@ -162,7 +162,7 @@ max-height: 130px;
 }
 
 #girls:hover {
-  content: url(webimg/blondie.png);
+  content: url(blondie.png);
   max-width: 120px;
   max-height: 120px;
 }
