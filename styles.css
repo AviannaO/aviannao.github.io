@@ -14,7 +14,7 @@ body {
 }
 
 @font-face {
-src: url(../web/thefonts/windows.otf);
+src: url(../windows.otf);
 font-family: oldsans;
 } 
 
